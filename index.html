@@ -16,6 +16,13 @@ background:radial-gradient(700px 260px at 12% -30%,rgba(74,168,255,.14),transpar
 h1{font-size:clamp(22px,3.4vw,32px);margin:8px 0 4px;letter-spacing:-.02em}
 .upd{font-family:var(--mono);font-size:12.5px;color:var(--mut)}
 .upd b{color:var(--g)}
+.nav{margin-top:8px;font-size:13px}
+.help{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:14px 0}
+.help b{color:var(--ink)}
+.tmpl{margin:8px 0;padding:9px 12px;background:#0a1120;border:1px solid var(--line);border-radius:8px;color:var(--mut);font-size:12.5px}
+.tmpl u{color:var(--y);text-decoration:none}
+.cmd{font-size:12px;color:var(--dim)}
+code{font-family:var(--mono);background:#0a1120;border:1px solid var(--line);border-radius:5px;padding:1px 5px;color:#cfe0f7;font-size:12px}
 .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 6px;position:sticky;top:0;
 background:var(--bg);padding:10px 0;z-index:5;border-bottom:1px solid var(--line)}
 .chip{font-family:var(--mono);font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);
@@ -49,9 +56,15 @@ footer{border-top:1px solid var(--line);margin-top:26px;padding:16px 0 50px;colo
 <header><div class="wrap">
 <div class="eyebrow">AIBRO · Telegram · дашборд постов</div>
 <h1>📊 TG-дашборд @kirillbezikov</h1>
-<div class="upd">Обновлено: <b>2026-08-10 09:37 UTC</b> · постов в базе: 90 · обновляется автоматически каждый день</div>
+<div class="upd">Обновлено: <b>2026-08-10 09:55 UTC</b> · постов в базе: 90 · обновляется автоматически каждый день</div>
+<div class="nav">📡 <a href="./topics.html">Радар актуальных тем под ЦА</a> (свежие темы из дайджестов и конкурентов, без повторов)</div>
 </div></header>
 <div class="wrap">
+<div class="help">
+<b>Как попросить темы у Игоря (шаблон запроса):</b>
+<div class="tmpl">«Возьми статистику за прошлую неделю (этот дашборд + IG) и радар тем. Цель — <u>[репосты / подписки / охват / сохранения / заявки]</u>. Определи, какие типы и темы сработали, и предложи <u>5–7 тем на эту неделю</u> под нашу ЦА. Форматы вперемешку, не повторять уже написанное, к каждой — угол-упаковка и CTA.»</div>
+<div class="cmd">Команды агента: <code>python3 scripts/topic_radar.py</code> — пересобрать радар · <code>python3 scripts/tg_stats_update.py</code> — обновить дашборд.</div>
+</div>
 <div class="bar">
 <span class="chip" data-p="7">7 дней</span>
 <span class="chip on" data-p="28">28 дней</span>
